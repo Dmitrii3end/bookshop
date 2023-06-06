@@ -1,4 +1,4 @@
-import { buyBook, bagShop } from './buttons'
+import { buyBook, bagShop, swapBuyButton } from './buttons'
 
 const API_KEY = 'AIzaSyD82GEkAlJssoQzK5Luo9mlydgD4VjVJTA';
 const GET_COUNT_BOOKS = 6;
@@ -24,7 +24,7 @@ const getAndShowBooks = async() => {
     currentStep++;
 
 
-    books.forEach(book => {
+    books.forEach((book) => {
         let img = book.volumeInfo.imageLinks && book.volumeInfo.imageLinks.thumbnail;
         if (img == undefined) img = '/imgs/place-holder.jpg';
         let authors = book.volumeInfo && book.volumeInfo.authors;

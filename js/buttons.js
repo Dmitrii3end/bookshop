@@ -54,4 +54,4 @@ const addRemoveBook = book => {
 }
 
 
-export { buyBook, bagShop }
+export { buyBook, bagShop, swapBuyButton }
