@@ -1,0 +1,32 @@
+@import "variables.scss";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    color: $main-font-color;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.container {
+    width: 1120px;
+    padding: 20px;
+    margin: auto;
+}
+
+body {
+    padding-bottom: 74px;
+}
+
+@media screen and (max-width: 1120px) {
+    .container {
+        width: 100%;
+    }
+}

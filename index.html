@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/output/main.css">
+    <!-- <script defer src="/js/help-function.js"></script>
+    <script defer src="/js/main-slider.js"></script>
+    <script defer src="/js/buttons.js"></script>
+    <script defer src="/js/loadbooks.js"></script>
+    <script defer src="/js/switch-subject.js"></script>
+    <script defer src="/js/header.js"></script> -->
+    <script defer src="/output/main.js"></script>
+    <title>Bookshop</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__logo">
+                <a href="#">Bookshop</a>
+            </div>
+
+            <div class="header__wrapper">
+                <nav class="header__nav">
+                    <ul class="nav__list">
+                        <li class="nav__list_active"><a href="#">books</a></li>
+                        <li><a href="#">audiobooks</a></li>
+                        <li><a href="#">Stationery & gifts</a></li>
+                        <li><a href="#">blog</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header__items">
+                    <button class="header__button header__user">
+                        <img src="/imgs/user.svg" alt="user icon">
+                    </button>
+                    <button class="header__button header__search">
+                        <img src="/imgs/search.svg" alt="search icon">
+                    </button>
+                    <button data-count="0" id="shop-bag" class="header__button">
+                        <img src="/imgs/shop bag.svg" alt="shop bag icon">
+                    </button>
+                </div>
+            </div>
+
+            <button class="header__burger"><span></span></button>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main__header">
+            <div class="container">
+                <div class="main__slider">
+                    <div class="slider__imgs">
+                        <img src="/imgs/banner.png" alt="">
+                        <img src="/imgs/banner2.png" alt="">
+                        <img src="/imgs/banner3.png" alt="">
+                    </div>
+
+                    <div class="slider__wrap">
+                        <div class="slider__dots">
+                            <div class="slider__dot slider__dot_active"></div>
+                            <div class="slider__dot"></div>
+                            <div class="slider__dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="main__advertising main__advertising_first">
+                <p class="advertising__text">Change old book on new</p>
+                <div class="advertising__arrow"></div>
+            </a>
+            <a href="#" class="main__advertising main__advertising_second">
+                <p class="advertising__text">top 100 books 2022</p>
+                <div class="advertising__arrow"></div>
+            </a>
+        </div>
+        <div class="container">
+
+
+            <section class="main-section margin-top150">
+                <aside class="categories">
+                    <div class="categories__element categories__element_active" data-fullname="Architecture">Architecture</div>
+                    <div class="categories__element" data-fullname="Art">Art & Fashion</div>
+                    <div class="categories__element" data-fullname="Biography & Autobiography">Biography</div>
+                    <div class="categories__element" data-fullname="Business">Business</div>
+                    <div class="categories__element" data-fullname="Crafts & Hobbies">Crafts & Hobbies</div>
+                    <div class="categories__element" data-fullname="Drama">Drama</div>
+                    <div class="categories__element" data-fullname="Fiction">Fiction</div>
+                    <div class="categories__element" data-fullname="Cooking">Food & Drink</div>
+                    <div class="categories__element" data-fullname="Health & Fitness">Health & Wellbeing</div>
+                    <div class="categories__element" data-fullname="History">History & Politics</div>
+                    <div class="categories__element" data-fullname="Humor">Humor</div>
+                    <div class="categories__element" data-fullname="Poetry">Poetry</div>
+                    <div class="categories__element" data-fullname="Psychology">Psychology</div>
+                    <div class="categories__element" data-fullname="Science">Science</div>
+                    <div class="categories__element" data-fullname="Technology">Technology</div>
+                    <div class="categories__element" data-fullname="Travel">Travel & Maps</div>
+                </aside>
+
+                <article class="article">
+                    <div class="cards">
+
+                    </div>
+
+                    <div class="main__load-more margin-top84">
+                        <button id="load-more" class="main__button">Load more</button>
+                    </div>
+                </article>
+            </section>
+
+        </div>
+    </main>
+</body>
+
+</html>
