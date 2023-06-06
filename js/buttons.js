@@ -1,6 +1,14 @@
 import { getAndShowBooks } from './loadbooks'
 
-const bagShop = new Set();
+let bagShop = new Set();
+let books = JSON.parse(localStorage.getItem('books'));
+if (books && books.length > 0) {
+    books.forEach(book => bagShop.add(book));
+
+    let bag = document.querySelector('#shop-bag');
+
+    bag.setAttribute('data-count', `${books.length}`);
+}
 
 document.querySelectorAll('.card__button').forEach(button => {
     button.addEventListener('click', buyBook);
@@ -24,6 +32,8 @@ const shopBagShow = () => {
 
     countShopBag !== '0' ? bag.classList.add('header__shop-bag') : bag.classList.remove('header__shop-bag');
 }
+
+shopBagShow();
 
 
 document.querySelector('#load-more').addEventListener('click', () => {
@@ -52,6 +62,11 @@ const addRemoveBook = book => {
         bagShop.add(book);
     }
 }
+
+
+window.addEventListener('beforeunload', () => {
+    localStorage.setItem('books', JSON.stringify([...bagShop]));
+});
 
 
 export { buyBook, bagShop, swapBuyButton }
