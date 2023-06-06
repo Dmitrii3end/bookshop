@@ -1,3 +1,5 @@
+import { getAndShowBooks } from './loadbooks'
+
 const bagShop = new Set();
 
 document.querySelectorAll('.card__button').forEach(button => {

@@ -1,3 +1,5 @@
+import { currentStep, currentSubject, getAndShowBooks } from './loadbooks'
+
 document.querySelectorAll('.categories__element').forEach(element => {
     element.addEventListener('click', switchSubject);
 })

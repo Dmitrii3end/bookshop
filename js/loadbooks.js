@@ -136,4 +136,4 @@ const createCard = () => {
 
 getAndShowBooks();
 
-export { useRequestBooks, getAndShowBooks, showBooks, createCard }
+export { currentStep, currentSubject, useRequestBooks, getAndShowBooks, showBooks, createCard }
